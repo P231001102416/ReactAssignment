@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header & Footer */
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Controls / Sorting Bar */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.sort-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.sort-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Student Grid Layout */
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Student Card Design */
+.student-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  border-top: 4px solid #3b82f6;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.student-card h3 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.student-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 4px 0;
+}
+
+.cgpa-badge {
+  display: inline-block;
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}

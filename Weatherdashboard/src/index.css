@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 100%);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.dashboard-app {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: #0369a1;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-header p {
+  color: #0284c7;
+  font-size: 0.95rem;
+}
+
+/* Search Architecture Styles */
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+.search-btn {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #0369a1;
+}
+
+/* Primary Weather Metric Card Elements */
+.weather-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-main-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-main-info h2 {
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.country-code {
+  background: #0284c7;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.condition-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temp-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.temp-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #0f172a;
+}
+
+.condition-desc {
+  text-transform: capitalize;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* Metric Display Layout Panels */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 1.5rem;
+}
+
+.metric-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Interactive Loader State Elements */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: #0284c7;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(2, 132, 199, 0.1);
+  border-top-color: #0284c7;
+  border-radius: 50%;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Error Banner Configurations */
+.error-banner {
+  background: #fef2f2;
+  border-left: 5px solid #ef4444;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+.error-text {
+  color: #991b1b;
+  font-weight: 500;
+}
+
+.dashboard-footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.dashboard-footer a {
+  color: #0284c7;
+  text-decoration: none;
+}
